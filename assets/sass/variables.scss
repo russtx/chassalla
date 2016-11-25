@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 17, 2016, Aug 17, 2016 3:50:15 PM
+    Author     : Russ
+*/
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4f598e60-760d-433b-8388-e2bffaba12d0");
+@font-face{
+font-family:"Avenir Next LT W02SC Medium Cn";
+//src:url("Fonts/e6907180-0cd1-4dda-9fb0-ba8197d274c6.eot?#iefix");
+//src:url("Fonts/e6907180-0cd1-4dda-9fb0-ba8197d274c6.eot?#iefix") format("eot"),url("Fonts/265187a1-a069-4bea-a9d6-c3399dfb86c0.woff2") format("woff2"),url("Fonts/07092aed-d678-4c6d-a7d2-0028dab96c5a.woff") format("woff"),url("Fonts/ac5c7539-3403-4f31-bf72-0be68656ce28.ttf") format("truetype"),url("Fonts/0a77b5c9-d9ae-4990-968a-cd0755cb7265.svg#0a77b5c9-d9ae-4990-968a-cd0755cb7265") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W02SC Demi Cond";
+//src:url("Fonts/71943457-17b1-4259-a77b-810d9178e1ca.eot?#iefix");
+//src:url("Fonts/71943457-17b1-4259-a77b-810d9178e1ca.eot?#iefix") format("eot"),url("Fonts/ea4910e0-239f-4c25-a876-2a5c6231d7fd.woff2") format("woff2"),url("Fonts/4eaa0af9-c8da-4a75-b2f6-8eb7269303e0.woff") format("woff"),url("Fonts/760fbc28-19c0-4a72-a069-c797501d488f.ttf") format("truetype"),url("Fonts/a8423470-163b-4a22-885f-5473bf0ee7d8.svg#a8423470-163b-4a22-885f-5473bf0ee7d8") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_55 Roman1475520";
+//src:url("Fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix");
+//src:url("Fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix") format("eot"),url("Fonts/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"),url("Fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff"),url("Fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf") format("truetype"),url("Fonts/15281d0d-e3c2-46e1-94db-cb681e00bfaa.svg#15281d0d-e3c2-46e1-94db-cb681e00bfaa") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_65 Medium1475532";
+//src:url("Fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
+//src:url("Fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"),url("Fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"),url("Fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"),url("Fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"),url("Fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg");
+}
+
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
+
+//font-family: 'Dancing Script', cursive;
+
+
+$green:rgb(182, 213, 82);
+$greenline:rgba (182, 213, 82, .5);
+$gray:rgb(115, 115, 115);

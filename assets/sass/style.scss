@@ -1,0 +1,798 @@
+/*!
+	Theme Name: Chassalla Theme
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Russ Berge
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*\
+    imports
+\*------------------------------------*/
+
+@import "assets/sass/bourbon/bourbon.scss";
+
+@import "assets/sass/neat/neat.scss";
+
+@import 'mobile-menu.scss';
+
+@import 'variables.scss';
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#000;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clearfix{
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	//max-width:1280px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+        background:url("./assets/images/background-2.jpg");
+}
+/* header */
+.header {
+    background:url("./assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+/* logo */
+.logo {
+    @include span-columns(8);
+    @include shift(2);
+    margin-top:10px;
+    img{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* nav */
+.upper-menu{
+    display:none;
+}
+.lower-menu{
+    display: none;
+}
+.bottomNav{
+    display: none;
+}
+nav input[type="checkbox"]{
+    display:none;
+}
+
+nav input[type="checkbox"]{
+    display:none;
+}
+.pageTitle{
+    margin-top:-100px;
+    h1{
+        color:#fff;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        letter-spacing: 2px;
+        text-shadow: 3px 2px 3px rgba(0, 0, 0, .6);
+    }
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footerWrapper{
+    background:$green;
+    
+
+}
+.footer {
+    @include outer-container;
+
+    height:150px;
+    .greenline-1{
+        @include span-columns(4);
+        span{
+            border-bottom: solid 3px #fff;
+            width:90%;
+            display: block;
+            margin: 40px auto 0 auto;
+        }
+     }
+    .socialIcons{
+        @include span-columns(4); 
+        margin-top:24px;
+        display:flex;
+        justify-content:space-around;
+        img{
+            width:30px;
+            height:auto;
+            //margin-top:-48px;
+        }  
+    }
+    .greenline-2{
+       @include span-columns(4);
+       @include omega();
+       span{
+           border-bottom: solid 3px #fff;
+           width:90%;
+           display: block;
+           margin: 40px auto 0 auto;
+       }
+    }
+    p{
+        color:#fff;
+        text-align: center;
+
+    }
+    p.copyright{
+            position: relative;
+            top: 20px;
+        }
+    p.childress{
+            text-transform: uppercase;
+            position: relative;
+            top: 20px;
+        }
+}
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+.burlap{
+    h1{
+        color: #fff;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        text-shadow: 3px 2px 3px rgba(0, 0, 0, .6);
+        display: block;
+        margin: 0px auto 0px auto;
+        padding-bottom: 10px;
+        text-align: center;
+        position: relative;
+        top:-50px;
+    }
+    .defaultContent{
+        @include outer-container;
+        background:#fff;
+        margin-top:-52px;
+        min-height: 300px;
+        overflow: hidden;
+        padding: 10px;
+        h2{
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            padding:20px 0 15px 0;
+            margin:0 0 25px 0;
+            font-size: 24px;
+        }
+        span h2{
+            background:url("./assets/images/penLine-trans.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: 28px; 
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding-left: 10px;
+            width:100%;
+            height:60px;
+                
+        }
+        .greenline-1{
+           @include span-columns(4);
+           span{
+               border-bottom: solid 3px $green;
+               width:90%;
+               display: block;
+               margin: 7px auto 0 auto;
+           }
+        }
+         .email{
+           @include span-columns(4); 
+           img{
+               margin:-27px auto 0 auto;
+               display:block;
+           }
+        }
+        .phone{
+           @include span-columns(4); 
+           img{
+               margin:-27px auto 0 auto;
+               display:block;
+           }
+        }
+        .tablet{
+           @include span-columns(4); 
+           img{
+               margin:-27px auto 0 auto;
+               display:block;
+           }
+        }
+        .sheep{
+           @include span-columns(4); 
+           img{
+               margin:-50px auto 0 auto;
+               display:block;
+               
+           }
+        }
+        .yarn{
+           @include span-columns(4); 
+           img{
+               margin:-50px auto 0 auto;
+               display:block;
+           }
+        }
+        .olive
+        {
+           @include span-columns(4); 
+           img{
+               margin:-27px auto 0 auto;
+               display:block;
+           }
+        }
+        .greenline-2{
+           @include span-columns(4);
+           @include omega();
+           span{
+               border-bottom: solid 3px $green;
+               width:90%;
+               display: block;
+               margin: 7px auto 0 auto;
+           }
+        }
+        .contactForm{
+            @include span-columns(8);
+            @include shift(2);
+            .gform_wrapper h3.gform_title{
+                display:none;
+            }
+            input, textarea{
+                border: 1px $green solid;
+                color:#000;
+            }
+            
+            .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit]{
+                background:$green;
+                color:#fff;
+            }
+            
+        }
+        .phoneLink{
+            a{
+                p{
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
+        }
+        .findUs{
+            @include span-columns(8);
+            @include shift(2);
+            display:flex;
+            justify-content:space-around;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            img{
+                width:40px;
+                height:auto;
+                //margin-top:-48px;
+            }  
+        }
+        .woolContent{
+            padding: 10px 20px;
+            margin-top:-15px;
+            p{
+                text-align: center;
+                font-size: 15px;
+                font-family:"Avenir LT W01_55 Roman1475520";
+            }
+        }
+        .shoeImages{
+            @include span-columns(6);
+            margin-right:0;
+           
+            p{
+                img{
+                    width:125px;
+                    display:block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .knittedContent{
+            padding: 10px 20px;
+            margin-top:-15px;
+            p{
+                text-align: center;
+                font-size: 15px; 
+                font-family:"Avenir LT W01_55 Roman1475520";
+            }
+        }
+        .clothesImages{
+            @include span-columns(6);
+            margin-right:0;
+           
+            p{
+                img{
+                    width:125px;
+                    display:block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
+        .moreLink{
+            @include span-columns(4);
+            @include shift(8);
+            //padding-right:20px;
+            p{
+                font-family: 'Dancing Script', cursive;
+                font-size: 17px;
+                font-weight: 900;
+                float: left;
+                color:$gray;
+            }
+            img{
+                float: left;
+                position: relative;
+                top:13px;
+                left:7px;
+            }
+        }
+        .aboutText{
+            @include span-columns(12);
+            padding: 10px 15px;
+            p{
+                font-family:"Avenir LT W01_55 Roman1475520";
+                font-size: 14px;
+            }
+        }
+        .aboutImage{
+            @include span-columns(12);
+            img{
+                display: block;
+                margin:0 auto;
+                margin-bottom:30px;
+            }
+        }
+        .soapText{
+            @include span-columns(12);
+            padding: 10px 15px;
+            p{
+                font-family:"Avenir LT W01_55 Roman1475520";
+                font-size: 14px;
+            }
+        }
+        .soapsImages{
+            @include span-columns(6);
+            margin-right:0;
+           
+            p{
+                img{
+                    width:125px;
+                    display:block;
+                    margin: 0 auto;
+                }
+            }
+        }    
+      
+    }
+    .mainContent{
+        @include outer-container;
+        background:#fff;
+        margin-top:-4px;
+        .soapsFibersContainer{
+            background:url("./assets/images/soaps.jpg");
+            background-size: cover;
+            background-position-x: 50%;
+            height: 148px;
+            margin: 0px 10px 10px 10px;
+            position: relative;
+            top: 10px;
+            .tint{
+                background:rgba(0, 0, 0, .6);
+                margin: 10px;
+                height: 128px;
+                position: relative;
+                top: 10px;
+                .border{
+                    border:solid 1px rgba(255, 255, 255, .5);
+                    margin: 10px;
+                    height: 100px;
+                    position: relative;
+                    top: 10px;
+                    a{
+                        button{
+                            background:none;
+                            border:solid 1px rgba(255, 255, 255, .5);
+                            display:block;
+                            margin: 27px auto 0 auto;
+                            padding: 0 10px;
+                            height:40px;
+                            p{
+                                color:#fff;
+                                font-family: 'Dancing Script', cursive;
+                                font-size: 18px;
+                                letter-spacing: 2px;
+                                margin-top:6px;
+                                text-shadow: 3px 2px 3px rgba(0,0,0,0.6);
+                            }
+                        }
+                        button:hover{
+                            background:rgba(0, 0, 0, .8);
+                        }
+                    }    
+                }
+            }
+           .left{
+                @include span-columns(6);
+            }
+            .right{
+                @include span-columns(6);
+                @include omega();
+            } 
+            
+        }
+        h2{
+            color:#000;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            margin-bottom:40px;
+        }
+        .greenline-1{
+           @include span-columns(4);
+           span{
+               border-bottom: solid 3px $green;
+               width:90%;
+               display: block;
+               margin: 7px auto 0 auto;
+           }
+        }
+        .olive{
+           @include span-columns(4); 
+           img{
+               margin:-27px auto 0 auto;
+               display:block;
+           }
+        }
+        .sheep{
+           @include span-columns(4); 
+           img{
+               margin: -48px auto 0 auto;
+               display:block;
+           } 
+        }
+        .yarn{
+            @include span-columns(4); 
+            img{
+                margin: -48px auto 0 auto;
+                display:block;
+            }  
+        }
+        
+        .greenline-2{
+           @include span-columns(4);
+           @include omega();
+           span{
+               border-bottom: solid 3px $green;
+               width:90%;
+               display: block;
+               margin: 7px auto 0 auto;
+           }
+        }
+        .soapsContainer, .woolContainer,.knittedContainer{
+            @include span-columns(12);
+            padding: 15px;
+            p{
+                font-family:"Avenir LT W01_55 Roman1475520";
+                font-size: 15px;
+            }
+        }
+        .knittedContainer{
+            margin-bottom: 30px;
+        }
+        .linkButton{
+            a{
+                button{
+                    background:none;
+                    border: $green 1px solid;
+                    padding: 0 10px;
+                    height: 40px;
+                    display:block;
+                    margin: 10px auto;
+                    p{
+                        color:#000;
+                        text-transform: uppercase;
+                        margin-top: 11px;
+                    }
+                }
+            }
+        }
+        
+        .linkButton:hover{
+            a{
+                button{
+                    background:$green;
+                    p{
+                       color:#fff; 
+                    }
+                }
+            }
+            
+        }
+        
+    }   
+}
+.page-template-contact-page{
+    .header{
+        background:url("./assets/images/background-3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+.page-template-fibers-page{
+    .header{
+        background:url("./assets/images/background-4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+.page-template-mystory-page{
+    .header{
+        background:url("./assets/images/background-5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+.page-template-soaps-page{
+    .header{
+        background:url("./assets/images/background-6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+/*-----------------------------------------------------------------------------*/
+@import 'responsive.scss';

@@ -1,0 +1,801 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 17, 2016, Aug 17, 2016 3:48:32 PM
+    Author     : Russ
+*/
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:320px iPhone5 Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:320px){
+    
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:375px iPhone6 Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:375px){
+    .header {
+        height: 233px;
+    }
+    .burlap {
+        h1{
+            font-size: 40px;
+            top:-67px;
+        }
+        .mainContent {
+            h2{
+                font-size: 24px;
+            }
+            .soapsFibersContainer{
+                height: 195px;
+                .tint{
+                    height: 174px;
+                    .border{
+                        height:152px;
+                        a{
+                            button{
+                                margin: 50px auto 0 auto;
+                                height: 45px;
+                                width: 86px;
+                                p{
+                                   font-size:25px; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .defaultContent{
+            margin-top:-66px;
+            h2{
+                font-size:28px;
+                letter-spacing: 1px;
+            }
+            span h2{
+                height:65px;
+                font-size: 16px;
+            }
+            .shoeImages{
+                p{
+                    img{
+                        width:160px;
+                    }
+                }
+            }
+            .clothesImages{
+                p{
+                    img{
+                        width:160px;
+                    }
+                }
+            }
+            
+            .aboutText{
+                margin-top: -27px;
+                p{
+                    font-size: 16px;
+                }
+            }
+            .soapText{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .soapsImages{
+                p{
+                    img{
+                        width:160px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:400px  iPhone6 Plus Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:400px){
+    .header {
+        height: 253px;
+    }
+    .burlap{
+        .defaultContent{
+            h2{
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+            .shoeImages{
+                p{
+                    img{
+                        width:175px;
+                    }
+                }
+            }
+            .clothesImages{
+                p{
+                    img{
+                        width:175px;
+                    }
+                }
+            }
+            .aboutText{
+                p{
+                    font-size: 18px;
+                }
+            }
+            .soapText{
+                font-size: 18px;
+            }
+            .soapsImages{
+                p{
+                    img{
+                        width:175px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:568px   iPhone5 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:568px){
+    .header {
+        height: 342px;
+    }
+    .burlap{
+        h1{
+            font-size: 50px;
+            top: -92px;
+        }
+        .mainContent{
+            
+            .olive{
+                img{
+                   margin: -52px auto 0 auto; 
+                }
+            }
+            .soapsFibersContainer{
+                height: 266px;
+                .tint{
+                    height:244px;
+                    .border{
+                        height: 224px;
+                        a{
+                            button{
+                                margin: 66px auto 0 auto;
+                                width: 123px;
+                                height: 69px;
+                                p{
+                                    font-size: 30px;
+                                    margin-top: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .soapsContainer{
+                
+                .soapsContent{
+                    @include span-columns(6);
+                }
+                .soapsImage{
+                    @include span-columns(6);
+                    @include omega();
+                }
+            }
+            
+            .woolContainer{
+                .woolContent{
+                    @include span-columns(6);
+                }
+                .woolImage{
+                    @include span-columns(6);
+                    @include omega();
+                }
+            }
+        }
+        .knittedContainer{
+            .knittedContent{
+                @include span-columns(6);
+            }
+            .knittedImage{
+                @include span-columns(6);
+                @include omega();
+            }
+        }
+        .defaultContent{
+            margin-top: -80px;
+            span h2{
+                height: 88px;
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+            .shoeImages{
+                @include span-columns(4);
+                margin-right:0;
+                p{
+                    img{
+                        width:160px;
+                    }
+                }
+            }
+            .shoeImages:nth-child(9), .shoeImages:nth-child(12){
+                margin-left:2%;
+            }
+            .clothesImages{
+                @include span-columns(4);
+                margin-right:0;
+                p{
+                    img{
+                        width:160px;
+                    }
+                }
+            }
+            .clothesImages:nth-child(23), .clothesImages:nth-child(26) {
+               margin-left: 2%;
+            }
+            .moreLink{
+                p{
+                    padding-left: 53px;
+                }
+            }
+            .moreLink:last-child{
+                p{
+                    padding-bottom: 30px;
+                }
+            }
+            .woolContent{
+                p{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+            .knittedContent{
+                p{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+            .aboutText{
+                @include span-columns(8);
+                margin-bottom: 30px;
+            }
+            .aboutImage{
+                @include span-columns(4);
+                @include omega();
+                padding:0 15px;
+            }
+            .olive{
+                img{
+                    margin: -50px auto 0 auto;
+                }
+            }
+            .soapText{
+                
+            }
+            .soapsImages{
+                @include span-columns(4);
+                margin-right:0;
+                p{
+                    img{
+                        width:160px;
+                    }
+                }
+            }
+            .soapsImages:nth-child(2), .soapsImages:nth-child(5) {
+               margin-left: 2%;
+            }
+        }
+    
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:660px iPhone6 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:660px){
+    .header {
+        height: 415px;
+    }
+    .burlap {
+        .mainContent {
+            h2{
+                font-size: 28px;
+            }
+            .linkButton{
+                margin-top:40px;
+            }
+        }
+        .defaultContent{
+            span h2{
+                height: 98px;
+                font-size: 26px;
+                letter-spacing: 3px;
+            }
+            .shoeImages{
+                p{
+                    img{
+                        width:180px;
+                    }
+                }
+            }
+            .clothesImages{
+                p{
+                    img{
+                        width:180px;
+                    }
+                }
+            }
+            .soapText{
+                P{
+                    font-size: 18px;
+                } 
+            }
+            .soapsImages{
+                p{
+                    img{
+                        width:180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:736px   iPhone6 Plus Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:736px){
+    .header {
+        height: 483px;
+    }
+    .burlap {
+        .defaultContent {
+            min-height:900px;
+            span h2{
+                height: 104px;
+                font-size: 35px;
+            }
+            .findUs{
+                @include span-columns(6 of 12);
+                @include shift(3 0f 12);
+                display:flex;
+                justify-content:space-around;
+                img{
+                    width:60px;
+                }
+            }
+            .shoeImages{
+                p{
+                    img{
+                        width:200px;
+                    }
+                }
+            }
+            .clothesImages{
+                p{
+                    img{
+                        width:200px;
+                    }
+                }
+            }
+            .aboutText{
+                p{
+                    font-size: 22px;
+                }
+            }
+            .soapText{
+                p{
+                    font-size: 20px;
+                }
+            }
+            .soapsImages{
+                p{
+                    img{
+                        width:200px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:768px iPad Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:768px){
+    .header{
+        box-shadow: 5px 9px 13px #000;
+        height: 513px;
+    }
+    nav{
+        @include outer-container;
+        ul.menu{
+            @include span-columns(8 of 12);
+            @include shift(2 0f 12);
+
+            list-style-type: none;
+            //border-top: solid 1px $solid-gray;
+            display: flex;
+            justify-content: space-around;
+            
+            padding: 10px 0 0 0;
+            li{
+                float: left;
+                text-transform: uppercase;
+                
+                
+                font-size: 18px;
+                font-weight: 600;
+                a{
+                    color: #fff;
+                    text-shadow: 3px 2px 3px rgba(0,0,0,0.6);
+                    font-family:"Avenir Next LT W02SC Medium Cn";
+                }
+            }
+        }
+    }
+    .nav li.current-menu-item>a, .nav li a:hover {
+        color: #ccc;
+    }
+    .pageTitle{
+        margin-top: 0;
+        h1{
+            font-size:50px;
+            position: relative;
+            top:-236px;
+        }
+    }
+    .burlap {
+        .mainContent{
+            
+            width:95%;
+            position: relative;
+            margin-top:-266px;
+            padding-bottom:0;
+            box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+            .soapsFibersContainer{
+                height: 350px;
+                .tint{
+                    height:326px;
+                    .border{
+                        height:304px;
+                        a{
+                            button{
+                               margin: 111px auto 0 auto;
+                               p{
+                                    font-size: 40px;
+                                    margin-top: 8px;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+            .linkButton{
+                margin-top:24px;
+            }
+            .soapsContainer, .woolContainer, .knittedContainer{
+                p{
+                    font-size:18px;
+                }
+            }
+        }
+    }
+    .footerWrapper{
+        box-shadow: 1px -10px 5px rgba(0, 0, 0, .8);
+        height:220px;
+        margin-top: -115px;
+    }
+    /*=======================Contact Page ====================*/
+    .burlap {
+        h1{
+            font-size: 70px;
+            font-weight: 300;
+            top: -212px;
+        }
+        .defaultContent {
+            width:95%;
+            margin-top:-180px;
+            position:relative;
+            box-shadow: 12px 0 15px -4px rgba(0,0,0,0.8),-12px 0 8px -4px rgba(0,0,0,0.8);
+            
+         
+            h2{
+                font-size: 40px;
+                font-weight: 500;
+            }
+            
+            .greenline-1{
+                @include span-columns(5);
+            }
+            .email{
+                @include span-columns(2);
+            }
+            .phone{
+                @include span-columns(2);
+            }
+            .tablet{
+                @include span-columns(2);
+            }
+            .sheep{
+                @include span-columns(2);
+            }
+            .yarn{
+                @include span-columns(2);
+            }
+            .olive{
+                @include span-columns(2);
+                img{
+                    margin: -27px auto 0 auto;
+                }
+                
+            }
+            .greenline-2{
+                @include span-columns(5);
+                @include omega();
+            }    
+             .contactForm{
+                @include span-columns(6);
+                @include shift(3);
+            }
+            .findUs{
+                margin-top: 35px;
+                margin-bottom: 300px;
+            }
+            .woolContent{
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+            .knittedContent{
+                 p{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }              
+        }
+    }
+    .footerWrapper{
+        margin-top: 23px;
+    }
+    .footer{
+        margin-top:-40px;
+        
+        .bottomNav{
+            top: 26px;
+            position: relative;
+            margin-bottom: 10px;
+            li{
+                a{
+                    text-shadow:none;
+                }
+            }
+        }
+        .greenline-1{
+            padding-left:20px;
+        }
+        .socialIcons{
+            padding:0 20px;
+            img{
+                width:40px;
+            }
+        }
+        .greenline-2{
+            padding-right:20px;
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1024px       ipad Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1024px){
+    .header {
+        height: 682px;
+        .nav{
+            ul.menu{
+                padding: 10px 50px 0px 50px;
+            }
+        }
+    }
+    .pageTitle{
+        h1{
+            font-size: 80px;
+            margin-top: -30px;
+            line-height: 82px;
+            font-weight: 100;
+        }
+    }
+    .burlap {
+        .mainContent {
+            width:900px;
+            h2{
+                font-size: 48px;
+                font-weight: 400;
+            }
+            .soapsFibersContainer{
+                height: 473px;
+                .tint{
+                    height: 450px;
+                    .border{
+                        height: 428px;
+                        a{
+                            button{
+                                width: 170px;
+                                height: 100px;
+                                margin: 168px auto 0 auto;
+                                p{
+                                    font-size: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .greenline-1{
+                @include span-columns(5);
+            }
+            .olive, .sheep, .yarn{
+                @include span-columns(2);
+            }
+            .olive{
+                img{
+                    margin: -38px auto 0 auto;
+                }
+            }
+            .greenline-2{
+               @include span-columns(5); 
+               @include omega();
+            }
+            .linkButton{
+                margin-top:0px;
+                a{
+                    button{
+                        p{
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+            .soapsContainer, .woolContainer, .knittedContainer{
+                p{
+                    font-size:24px;
+                }
+            }
+            .knittedContainer{
+                margin-bottom:80px;
+            }
+        }
+        .defaultContent{
+            h2{
+                font-size: 48px;
+            }
+            span h2{
+                height: 127px;
+                font-size: 45px;
+            }
+            .shoeWrapper{
+                @include span-columns(10);
+                @include shift(1);
+                .shoeImages{
+                    
+                    p{
+                        img{
+                            width:235px;
+                        }
+                    }
+                }
+            }
+            .clothesWrapper{
+                @include span-columns(10);
+                @include shift(1);
+                .clothesImages{
+                    
+                    p{
+                        img{
+                            width:235px;
+                        }
+                    }
+                }
+            }
+            .soapText{
+                p{
+                    font-size: 24px;
+                } 
+            }
+            .soapsWrapper{
+                @include span-columns(10);
+                @include shift(1); 
+            }
+            .soapsImages{
+                p{
+                    img{
+                        width:235px;
+                    }
+                }
+            }
+        }
+    }
+    .bottomNav{
+    display: flex;
+}
+   
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1140px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1140px){
+    .header {
+        height: 806px;
+    }
+    .burlap {
+        .defaultContent {
+            span h2{
+                height: 150px;
+            }
+            .shoeWrapper {
+                .shoeImages {
+                    p {
+                        img{
+                            width: 284px;
+                        }
+                    }
+                }
+            }
+            .clothesWrapper {
+                .clothesImages {
+                    p {
+                        img{
+                            width: 284px;
+                        }
+                    }
+                }
+            }
+            .soapsWrapper{
+                .soapsImages{
+                    p {
+                        img{
+                            width: 284px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1240px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1240px){
+    
+}
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1500px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1500px){
+    .header{
+        background-position-y: 56%;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
